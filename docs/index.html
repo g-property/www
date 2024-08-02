@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>g Property - London Auction Specialists</title>
+    <style>
+        :root {
+            --primary-color: #6DBB9A;
+            --secondary-color: #00587D;
+            --accent-color: #76227F;
+            --text-color: #333;
+            --light-bg: #ecf0f1;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+        }
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5rem;
+        }
+        .header p {
+            font-size: 1.2em;
+            margin-top: 0;
+            opacity: 0.8;
+        }
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: opacity 0.3s ease;
+        }
+        nav a:hover {
+            opacity: 0.7;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .section {
+            margin-bottom: 60px;
+        }
+        .section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .feature-card {
+            background-color: var(--light-bg);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .feature-card h3 {
+            color: var(--accent-color);
+            margin-top: 0;
+        }
+        .property-showcase {
+            background-color: var(--light-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .property-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .property-info {
+            padding: 30px;
+        }
+        .property-info h3 {
+            color: var(--accent-color);
+            margin-top: 0;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #601b68;
+        }
+        .logo {
+        width: 208px;
+        height: 85px;
+        }
+        .footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .footer img {
+            width: 208x;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .footer .social-media {
+            margin: 10px 0;
+        }
+        .footer .social-media a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        .footer .social-media a:hover {
+            color: var(--accent-color);
+        }
+        .footer .legal-info {
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="./images/gProperty_logo-Purple_White_trans_light_833x340.png" alt="gProperty Logo" class="logo">
+        <div>
+            <p>Pioneering London Auction Property Investment</p>
+        </div>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#expertise">Our Expertise</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="content">
+        <section id="about" class="section">
+            <h2>About G Property Investments</h2>
+            <p>At G Property Investments Ltd, we're at the forefront of innovative property investment in the UK. Specializing in acquiring high-potential properties from auctions, we transform overlooked gems into lucrative rental investments. Our unique approach combines market insight, renovation expertise, and strategic letting to maximize returns for our investors.</p>
+        </section>
+
+        <section id="expertise" class="section">
+            <h2>Our Expertise</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Auction Mastery</h3>
+                    <p>Our team excels in identifying the most promising properties at London auctions, often before they hit the open market.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Value Enhancement</h3>
+                    <p>Through strategic renovations and upgrades, we significantly increase property values, creating attractive living or commercial spaces for tenants.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Optimal Letting</h3>
+                    <p>Our letting strategies ensure consistent occupancy with quality tenants, maximizing rental yields for our investors.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Market Foresight</h3>
+                    <p>We leverage deep market knowledge to target properties in areas primed for growth, ensuring long-term appreciation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <h2>Our Growing Portfolio</h2>
+            <p>While we're just beginning our journey, our first property acquisition demonstrates the potential of our investment strategy:</p>
+            <div class="property-showcase">
+                <img src="./images/2 Clarence Buildings.png" alt="A Vacant Mid Terrace Building" class="property-image">
+                <div class="property-info">
+                    <h3>A Vacant Mid Terrace Building</h3>
+                    <p>This vacant mid-terrace building is arranged to provide a ground floor shop, a rear one-bedroom flat, a first-floor flat, and a second-floor two-bedroom flat. Acquired at auction below market value, we will transform it into a high-yield rental commercial property, setting the standard for our future acquisitions.</p>
+                    <ul>
+                        <li>Acquisition Date: Q2 2024</li>
+                        <li>Location: Freshwater, Isle Of Wight</li>
+                        <li>Property Type: Mix Residental & Commercial Mid Terrace Building</li>
+                        <li>The property is situated on a mixed use road close to local shops and amenities.</li>
+                        <li>The property comprises a mid terrace building arranged to provide a ground floor shop, a rear one bedroom flat, a first floor flat and a second floor two bedroom flat.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Invest in London's Future</h2>
+            <p>Ready to be part of London's most exciting property investment opportunity? Our unique approach to auction acquisitions and property management offers a fresh perspective on real estate investment. Join us as we expand our portfolio and reshape London's rental landscape.</p>
+            <a href="mailto:invest@gproperty.uk" class="cta-button">Explore Investment Opportunities</a>
+        </section>
+    </div>
+    <footer class="footer">
+        <img src="./images/gProperty_logo-Purple_trans_light_833x340.png" alt="gProperty Logo" class="logo">
+        <div class="legal-info">
+            <p>gProperty is a trademark of G Property Investments Ltd, a registered company in England and Wales.</p>
+            <p>Registered Office: 92 Salisbury Road, London, UK, EN5 4JN</p>
+            <p>Company Registration No: 12345678</p>
+            <p>Contact: <a href="mailto:info@gproperty.uk">Email</a></p>
+        </div>
+    </footer>
+</body>
+</html>
